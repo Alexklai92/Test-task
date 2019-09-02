@@ -10,10 +10,7 @@ class TextAlignment:
     def input_filename(self):
         """Ввод имени файла"""
 
-        try:
-            return sys.argv[1]
-        except:
-            return input('Введите имя файла: ')
+        return sys.argv if len(sys.argv) > 1 else input('Введите имя файла: ')
 
     def open_file(self):
         """Чтение файла"""
