@@ -9,6 +9,7 @@ class TextAlignment:
 
     def input_filename(self):
         """Ввод имени файла"""
+
         try:
             return sys.argv[1]
         except:
@@ -16,6 +17,7 @@ class TextAlignment:
 
     def open_file(self):
         """Чтение файла"""
+
         try:
             with open(self.filename, encoding='utf-8') as file_text:
                 text = file_text.read()
