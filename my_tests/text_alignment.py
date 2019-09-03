@@ -18,7 +18,7 @@ class TextAlignment:
         try:
             with open(self.filename, encoding='utf-8') as file_text:
                 text = file_text.read()
-        except:
+        except FileNotFoundError:
             text = ''
             print('Такого файла нет.')
 
